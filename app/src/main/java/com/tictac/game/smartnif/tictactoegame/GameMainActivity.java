@@ -212,10 +212,7 @@ public class GameMainActivity extends AppCompatActivity implements GameInterface
             }
         });*/
 
-
         printEntryScreen();
-
-
 
        // btnOptions.setOnClickListener(new View.OnClickListener() {
        //     @Override
