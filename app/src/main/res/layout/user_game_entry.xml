@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/game_background">
+
+    <ImageView
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_marginTop="100dip"
+        android:id="@+id/imageView"
+        android:background="@drawable/ttoeboard"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton android:id="@+id/btnNewGame"
+        android:layout_width="175dip"
+        android:layout_height="35dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dip"
+        android:src="@drawable/startgame"/>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_marginTop="45dip" android:layout_height="match_parent" android:layout_gravity="center">
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="50sp"
+        android:layout_gravity="center"
+        android:text="Game Level"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textColor="#576a0c"/>   -->    <!-- "#FF1C502F"/>  -->
+
+
+    <Spinner
+        android:layout_width="175dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerLevel"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:spinnerMode="dialog"
+        android:background="@drawable/gamelevel"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:prompt="@string/gamelevel"/>
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:text="Cross Type"
+        android:id="@+id/textView1"
+        android:textSize="30sp"
+        android:textColor="#FF1C502F"/>  -->
+
+    <Spinner
+        android:layout_width="175dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerUserType"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:spinnerMode="dialog"
+        android:background="@drawable/gamelevel"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:prompt="@string/gameseedtype"/>
+    <!--
+        <ImageButton
+            android:visibility="invisible"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOptions"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="35sp"
+            android:src="@drawable/options"/>  -->
+
+    </LinearLayout>
+</LinearLayout>
